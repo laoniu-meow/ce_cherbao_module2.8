@@ -12,14 +12,14 @@ terraform {
 
 # Create a provider
 provider "aws" {
-  region = "us-east-1"
+  region = var.region
 
   default_tags {
     tags = {
-      Name        = "ce_cherbao_module2.8"
-      Environment = "dev"
-      Owner       = "ce_cherbao"
-      Project     = "ce_cherbao_module2.8"
+      Name        = var.project_name
+      Environment = var.environment
+      Owner       = var.owner
+      Project     = var.project_name
     }
   }
 }

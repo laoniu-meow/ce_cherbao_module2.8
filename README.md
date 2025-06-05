@@ -16,21 +16,65 @@ Step 2: Create a directory by excute the command: mkdir <foldername>
 
 Step 3: Navigate to the folder, command: cd <foldername>
 
-Step 4: Create a read me file, command: touch README.md, and explain the step of the assingment
+Step 4: Create a read me file, command: touch README.md, and explain on the steps of the assingment
 
 Step 5: Initialise the git repository, command: git init
 
 Step 6: Check the git staging status, git status (You should be able to see the README.md unstage)
 
-Step 7: Create a new repository from local to remote, command: git remote add origin <github url>
-url example: git remote add origin https://github.com/<username>>/<repo_name>
+Step 7: Connecting your local Git repository to a remote repository
+
+- command: git remote add origin https://<github_url>
+
+  then
+
+- command: git remote set-url origin https://<github_url>
+
+url example: <github_username>/<repo_name>.git
 
 Step 8: Check the remote url, command: git remote -v
 
 Step 9: Stage and commit the local repository to remote repository, command:
-git add .
-git commit - m "<commit message>"
+
+- git add .
+- git commit - m "<commit message>"
 
 Step 10: Check the branch to confirm is "main", command: git branch
 
 Step 11: push the local repository to remote, command: git push -u origin main (Once push sucessfully, next commit and push can use command: "git push")
+
+# Assignment Preparation: Create the VPC and EC2
+
+Step 1: Create provider in provider.tf
+
+vpc.tf file:
+Step 2: Create VPC and CIDR range
+
+Step 3: Create internet gateway
+
+Step 4: Get availability zone data
+
+Step 3: Create Route table in vpc.tf
+
+Step 4: Create a public subnet
+
+Step 5: Create a private subnet
+
+Step 6: Create a route table for the public subnet
+
+Step 7: Create a route table for the private subnet
+
+Step 8: Create internet route for public subnet
+
+Step 9: Associate public subnet with public route table
+
+Step 10: Associate private subnet with private route table
+
+ec2.tf:
+Step 11: Security group for EC2 instance
+
+- Allow SSH access
+- Allow HTTP access
+- Allow all outbound traffic
+
+Step 12: EC2 instance
