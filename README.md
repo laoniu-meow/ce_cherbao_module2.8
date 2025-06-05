@@ -78,3 +78,37 @@ Step 11: Security group for EC2 instance
 - Allow all outbound traffic
 
 Step 12: EC2 instance
+
+# Assignment creation steps
+
+Step 1: Create Elastic Beanstalk Application, navigate to the service "Elastic Beanstalk", then choose create application
+
+Step 2: Create an application name
+![Alt text](/public/create_app.png)
+
+Step 3: Choose the "Create environment", to create a web server environment
+![Alt text](/public/create_env1.png)
+Click next
+
+![Alt text](/public/create_env2.png)
+Click next
+
+![Alt text](/public/create_env3.png)
+Click next
+
+Configure service access
+![Alt text](/public/create_env4.png)
+Click next
+
+Set up networking, database, and tags
+![Alt text](/public/create_env5.png)
+No Database confguration and click next
+
+Configure instance traffic and scaling - Capacity
+![Alt text](/public/create_env6.png)
+![Alt text](/public/create_env7.png)
+The rest leave them as default, then click next
+
+Configure updates, monitoring, and logging, leave as deafult and click next
+
+Step 3: Verify the Deployment
