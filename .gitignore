@@ -17,7 +17,8 @@ crash.*.log
 
 # For the assignment, this file is exception to push to the repo, 
 # not recommend to push to the repo for production environment
-.tfvars 
+.tfvars
+*.tfvars
 
 
 # Ignore override files as they are usually used to override resources locally and so

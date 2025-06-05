@@ -51,7 +51,7 @@ variable "availability_zone" {
 # Define the default key pair name
 variable "key_pair_name" {
   type    = string
-  default = "key-pairs"
+  default = "private-key"
 }
 
 # Dedine the route table name
