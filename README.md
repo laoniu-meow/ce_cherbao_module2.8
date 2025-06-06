@@ -112,3 +112,14 @@ The rest leave them as default, then click next
 Configure updates, monitoring, and logging, leave as deafult and click next
 
 Step 3: Verify the Deployment
+
+Step 4: Setup New Version for Deployment, unzip the python.zip
+
+Step 5: Change the <h1> Tag content
+
+Step 6: zip the working file with the command: zip ../myapp.zip -r _ .[^.]_
+
+Step 7: Navigate to the Application version, upload the file and input the version number, finally depoly it
+
+Final result：
+![Alt text](/public/assigmment2.8.png)

@@ -39,7 +39,7 @@ resource "aws_security_group" "ec2_sg" {
 resource "aws_instance" "main" {
   ami                    = var.ami_id
   instance_type          = "t2.micro"
-  subnet_id              = aws_subnet.public.id
+  subnet_id              = aws_subnet.public[0].id # Place in first public subnet
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]
   key_name               = var.key_name
 
