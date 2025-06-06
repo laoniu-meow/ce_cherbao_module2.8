@@ -34,7 +34,7 @@ variable "vpc_cidr_block" {
 # Define the default key pair name
 variable "key_pair_name" {
   type    = string
-  default = "laoniu-pem"
+  default = "key-pair"
 }
 
 # Define the AMI ID for the EC2 instance
